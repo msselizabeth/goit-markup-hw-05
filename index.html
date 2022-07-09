@@ -57,8 +57,19 @@
         <section class="button section hero"> 
            <div class="contanier">
              <h1 class="title-button">Эффективные решения <br> для вашего бизнеса</h1>
-            <button type="button" class="button-main">Заказать услугу</button>
+            <button data-modal-open type="button" class="button-main">Заказать услугу</button>
            </div>
+           <!--Модальное окно-->
+           <div data-modal class="backdrop is-hidden">
+            <div class="modal">
+                <button data-modal-close type="button" class="btn-modal">
+                    <svg class="icon-modal">
+                    <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+                </svg>
+                </button>
+            </div>
+           </div>
+
         </section>  
         <!--Преимущества-->
         <section class="section">
@@ -112,17 +123,18 @@
             <div class="services-box contanier">
                 <h2 class="services-title">Чем мы занимаемся</h2>
             <ul class="services-list">
-                <li class="services-item"> <a href="#"> <img class="img" src="./images/keybord.jpg" alt="Разработка макета сайта" width="370" height="294"></a> 
+                <li class="services-item"> 
+                        <a class="services-link" href="#"> <img class="img" src="./images/keybord.jpg" alt="Разработка макета сайта" width="370" height="294"></a> 
                 <div class="img-box">
                     <p class="services-paragraph">Десктопные приложения</p>
                 </div>
                 </li>
-                <li class="services-item"> <a href="#"><img class="img" src="./images/screen.jpg" alt="Адаптация версий для смартфонов и планшетов." width="370" height="294"></a> 
+                <li class="services-item"> <a class="services-link" href="#"><img class="img" src="./images/screen.jpg" alt="Адаптация версий для смартфонов и планшетов." width="370" height="294"></a> 
                 <div class="img-box">
                     <p class="services-paragraph">Мобильные приложения</p>
                 </div>
                 </li>
-                <li class="services-item"> <a href="#"><img class="img" src="./images/paint.jpg" alt="Дизайн сайта" width="370" height="294"></a>
+                <li class="services-item"> <a  class="services-link"href="#"><img class="img" src="./images/paint.jpg" alt="Дизайн сайта" width="370" height="294"></a>
                 <div class="img-box ">
                     <p class="services-paragraph">Дизайнерские решения</p>
                 </div>
@@ -366,6 +378,8 @@
         </div>
         </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
 </body>
 </html>
 
